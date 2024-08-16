@@ -1,10 +1,10 @@
-// Este programa È para calcular o IMC
+// Este programa √© para calcular o IMC
 #include <stdio.h>
 #include <stdlib.h>
 int main(){
     float peso, altura, imc;
     
-    // Operadores de c·lculo: +, -, /, *
+    // Operadores de c√°lculo: +, -, /, *
     printf("Informe o peso: ");
     scanf("%f",&peso);
     printf("Informe a altura: ");
