@@ -1,0 +1,20 @@
+body {
+    background-color: beige;
+}
+h1 {
+    color: blue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 35px;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    border-bottom-color: red;
+    border-bottom-style: dashed;
+    border-bottom-width: 2px;
+    border-radius: 10px;
+    background-color: coral;
+}
+p {
+    background-color: rgb(202, 199, 199);
+    padding: 20px;
+}
