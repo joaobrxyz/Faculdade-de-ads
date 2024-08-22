@@ -6,11 +6,14 @@
 #include <locale.h>
 int main(){
     setlocale(LC_ALL, "Portuguese");
+    char nome[30];
     float salario, aumento;
+    printf("Digite seu nome: ");
+    gets(nome);
     printf("Digite o salário atual: R$");
     scanf("%f",&salario);
     aumento =  salario + (salario * 15.35 / 100);
-    printf("O novo salário com o aumento é: R$%.2f\n",aumento);
+    printf("%s, o novo salário com o aumento é: R$%.2f\n",nome,aumento);
     system("pause");
     return 0;
 }
