@@ -1,0 +1,29 @@
+@charset "UTF-8";
+* {
+    margin: 0px;
+    padding: 0px;
+}
+#conteiner {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-areas: "cabecalho cabecalho" "esquerdo conteudo" "esquerdo rodape";
+    grid-template-columns: 20% auto;
+    grid-template-rows: 120px 69.5vh 80px;
+}
+#header {
+    grid-area: cabecalho;
+    border: 1px solid black;
+}
+#left {
+    grid-area: esquerdo;
+    border: 1px solid black;   
+}
+#main {
+    grid-area: conteudo;
+    border: 1px solid black;
+}
+#footer {
+    grid-area: rodape;
+    border: 1px solid black;
+}
