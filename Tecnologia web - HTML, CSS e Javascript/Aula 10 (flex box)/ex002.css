@@ -1,0 +1,41 @@
+@charset "UTF-8";
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    display: flex;
+    flex-flow: column;
+}
+header {
+    height: 50px;
+    width: 97%;
+    padding: 20px;
+    background-color: rgb(91, 91, 214);
+}
+header h1 {
+    color: white;
+    text-align: center;
+}
+#container {
+    display: flex;
+    height: 79vh;
+}
+nav {
+    width: 12%;
+    background-color: aqua;
+    padding: 20px;
+}
+main {
+    background-color: chartreuse;
+    width: 88%;
+    padding: 20px;
+}
+footer {
+    background-color: blue;
+    width: 98.5%;
+    height: 28px;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
