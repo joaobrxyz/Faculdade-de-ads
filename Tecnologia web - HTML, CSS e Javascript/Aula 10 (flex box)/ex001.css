@@ -1,0 +1,14 @@
+@charset "UTF-8";
+#container {
+    display: flex;
+    justify-content: space-between;
+}
+.item {
+    background-color: burlywood;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
+#item2 {
+    flex-grow: 1;
+}
