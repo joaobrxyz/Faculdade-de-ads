@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação</title>
+    <style>
+        span {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    
+    <form name="form1" action="grava.jsp" method="post">
+        <fieldset>
+            <legend>Cadastro</legend>
+            <label for="txtnome">Nome:</label>
+            <input type="text" name="txtnome" id="txtnome">
+            <span id="erronome"></span>
+            <br>
+            <label for="txtidade">Idade:</label>
+            <input type="number" name="txtidade" id="txtidade">
+            <span id="erroidade"></span>
+            <br>
+            <label for="txtemail">Email:</label>
+            <input type="email" name="txtemail" id="txtemail">
+            <span id="erroemail"></span>
+            <br>
+            <input type="button" value="Gravar" onclick="verificar()">
+        </fieldset>
+    </form>
+    <script src="ex001.js"></script>
+</body>
+</html>
