@@ -1,4 +1,4 @@
-<% @page language="java" import="java.sql.*" %>
+<%@ page language="java" import="java.sql.*" %>
 
 <%
     // Cria as variáveis e armazena as informações digitadas pelo usuário
@@ -7,7 +7,7 @@
     String vemail = request.getParameter("txtemail");
     String vsenha = request.getParameter("txtsenha");
 
-    // Variáveis para acssar o banco de dados
+    // Variáveis para acessar o banco de dados
     String database = "web";
     String enderecoBD = "jdbc:mysql://localhost:3306/" + database;
     String usuarioBD = "root";
@@ -28,10 +28,10 @@
     // Comando para inserir no banco
     String sql = "INSERT INTO alunos(nome, idade, email, senha) values(?,?,?,?)";
 
-    // Cria a variável do tipo Statement
-    PreparedStatement stm = conexao.PreparedStatement(sql);
+    // Cria a variável do tipo PreparedStatement
+    PreparedStatement stm = conexao.prepareStatement(sql);
     stm.setString(1, vnome);
-    stm.setint(2, vidade);
+    stm.setInt(2, vidade);
     stm.setString(3, vemail);
     stm.setString(4, vsenha);
 
@@ -40,5 +40,5 @@
 
     out.print("<h2>Dados gravados com sucesso!!!");
     out.print("<br>");
-    out.print("<a href = 'index.html'>Voltar</a>");
+    out.print("<a href='index.html'>Voltar</a>");
 %>
