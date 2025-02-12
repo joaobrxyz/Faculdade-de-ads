@@ -1,2 +1,37 @@
 
 desktop.ini
+# Arquivos gerados pelo Gradle
+.gradle/
+build/
+*.apk
+*.aar
+*.ap_
+*.aab
+
+# Arquivos do Android Studio
+.idea/
+*.iml
+*.iws
+*.ipr
+local.properties
+/captures/
+.navigation/
+.idea/caches/
+.idea/libraries/
+.idea/modules.xml
+.idea/workspace.xml
+.idea/navEditor.xml
+.idea/assetWizardSettings.xml
+
+# Arquivos de configuração do Gradle
+/.gradle/
+/gradlew
+/gradlew.bat
+
+# Arquivos de dependências e cache
+/.cxx/
+/.externalNativeBuild/
+
+# Arquivos de log e temporários
+*.log
+*.tmp
