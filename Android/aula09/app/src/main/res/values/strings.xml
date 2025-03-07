@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MAppEx9</string>
+
+    <string-array name="periodo">
+        <item>Manhã 1</item>
+        <item>Manhã 2</item>
+        <item>Noite 1</item>
+        <item>Noite 2</item>
+    </string-array>
+</resources>
