@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selecione a hora"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"/>
+
+    <TimePicker
+        android:id="@+id/hora"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/btMostrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mostrar Hora"
+        android:textSize="25dp"/>
+
+
+</LinearLayout>
