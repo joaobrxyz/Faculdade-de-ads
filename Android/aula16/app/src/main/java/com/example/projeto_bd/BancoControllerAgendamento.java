@@ -1,0 +1,36 @@
+package com.example.projeto_bd;
+
+import android.content.ContentValues;
+import android.content.Context;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+public class BancoControllerAgendamento {
+    private SQLiteDatabase db;
+    private CriaBanco banco;
+
+
+    public BancoControllerAgendamento(Context context) {
+        banco = new CriaBanco(context);
+    }
+    public String insereAgendamento(String data, String hora, String email) {
+        ContentValues valores;
+        long resultado;
+        db = banco.getWritableDatabase();
+
+
+        valores = new ContentValues();
+        valores.put("data", data);
+        valores.put("hora", hora);
+        valores.put("email", email);
+
+
+        resultado = db.insert("agendamento", null, valores);
+        db.close();
+
+
+        if (resultado == -1)
+            return "Erro ao efetuar o agendamento";
+        else
+            return "Agendamento efetuado com sucesso";
+    }
+}
