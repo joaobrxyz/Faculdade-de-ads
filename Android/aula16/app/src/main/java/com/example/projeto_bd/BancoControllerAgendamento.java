@@ -33,4 +33,19 @@ public class BancoControllerAgendamento {
         else
             return "Agendamento efetuado com sucesso";
     }
+
+    public Cursor ConsultarAgendamentos() {
+        Cursor cursor;
+        //SELECT idAgendamento, data, hora, email FROM agendamento
+        String[] campos = { "idAgendamento", "data", "hora", "email" };
+        db = banco.getReadableDatabase();
+        cursor = db.query("agendamento", campos, null, null, null, null,
+                null, null);
+        if (cursor != null) {
+            cursor.moveToFirst();
+        }
+        db.close();
+        return cursor;
+    }
+
 }

@@ -8,7 +8,7 @@ import android.widget.ImageButton;
 
 
 public class Menu extends AppCompatActivity implements View.OnClickListener {
-    ImageButton btMNUContatos, btMNUMeusDados, btMNUAgendamento;
+    ImageButton btMNUContatos, btMNUMeusDados, btMNUAgendamento, btMNUConsultaAgendamento;
     String email = "";
 
 
@@ -24,9 +24,11 @@ public class Menu extends AppCompatActivity implements View.OnClickListener {
         btMNUContatos = findViewById(R.id.btMNUContatos);
         btMNUMeusDados = findViewById(R.id.btMNUDados);
         btMNUAgendamento = findViewById(R.id.btMNUAgendamento);
+        btMNUConsultaAgendamento = findViewById(R.id.btMNUConsultaAgendamento);
         btMNUAgendamento.setOnClickListener(this);
         btMNUContatos.setOnClickListener(this);
         btMNUMeusDados.setOnClickListener(this);
+        btMNUConsultaAgendamento.setOnClickListener(this);
     }
 
 
@@ -45,6 +47,13 @@ public class Menu extends AppCompatActivity implements View.OnClickListener {
         }
         if (v.getId() == R.id.btMNUAgendamento) {
             Intent tela = new Intent(this, Agendamento.class);
+            Bundle parametros = new Bundle();
+            parametros.putString("email", email);
+            tela.putExtras(parametros);
+            startActivity(tela);
+        }
+        if (v.getId() == R.id.btMNUConsultaAgendamento) {
+            Intent tela = new Intent(this, Consulta_Lista.class);
             Bundle parametros = new Bundle();
             parametros.putString("email", email);
             tela.putExtras(parametros);
