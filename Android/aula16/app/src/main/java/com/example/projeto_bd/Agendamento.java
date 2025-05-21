@@ -3,6 +3,7 @@ package com.example.projeto_bd;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.database.Cursor;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -44,10 +45,25 @@ public class Agendamento extends AppCompatActivity implements View.OnClickListen
         hora = spAgeHora.getSelectedItem().toString();
 
         BancoControllerAgendamento bd = new BancoControllerAgendamento(getBaseContext());
-        String resultado;
+        String resultado = "";
 
-        resultado = bd.insereAgendamento(data, hora, email);
+        if (consulta()) {
+            resultado = bd.insereAgendamento(data, hora, email);
+        }
 
         Toast.makeText(getApplicationContext(), resultado, Toast.LENGTH_LONG).show();
+    }
+
+    public boolean consulta() {
+        BancoControllerAgendamento bd = new BancoControllerAgendamento(getBaseContext());
+        Cursor dados = bd.consultaDadosAgendamento(data, hora);
+
+        if(dados.moveToFirst()){
+            String msg = "Não é possível agendar, pois já existe um agendamento para essa data e hora";
+            Toast.makeText(this, msg, Toast.LENGTH_SHORT).show();
+            return false;
+        } else {
+            return false;
+        }
     }
 }

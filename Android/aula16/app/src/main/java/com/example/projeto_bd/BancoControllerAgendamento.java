@@ -48,4 +48,18 @@ public class BancoControllerAgendamento {
         return cursor;
     }
 
+    public Cursor consultaDadosAgendamento(String data, String hora) {
+        Cursor cursor;
+        String[] campos = {"data", "hora"};
+        String where = "data = '" + data + "'and hora ='" + hora + "'" ;
+        db = banco.getReadableDatabase();
+
+        cursor = db.query("agendamento", campos, where, null, null, null,
+                null, null);
+        if (cursor != null) {
+            cursor.moveToFirst();
+        }
+        db.close();
+        return cursor;
+    }
 }
