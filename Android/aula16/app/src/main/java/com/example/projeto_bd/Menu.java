@@ -53,7 +53,7 @@ public class Menu extends AppCompatActivity implements View.OnClickListener {
             startActivity(tela);
         }
         if (v.getId() == R.id.btMNUConsultaAgendamento) {
-            Intent tela = new Intent(this, Consulta_Lista.class);
+            Intent tela = new Intent(this, FiltroDataConsulta.class);
             Bundle parametros = new Bundle();
             parametros.putString("email", email);
             tela.putExtras(parametros);

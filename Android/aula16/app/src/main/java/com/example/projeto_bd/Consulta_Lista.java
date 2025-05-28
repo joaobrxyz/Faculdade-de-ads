@@ -3,6 +3,7 @@ package com.example.projeto_bd;
 import androidx.appcompat.app.AppCompatActivity;
 
 
+import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.widget.ListView;
@@ -13,14 +14,21 @@ import java.util.LinkedList;
 import java.util.List;
 public class Consulta_Lista extends AppCompatActivity {
     ListView lista;
+    String email, data;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_consulta_lista);
 
+        Intent tela = getIntent();
+        Bundle parametos = tela.getExtras();
+        email = parametos.getString("email");
+        data = parametos.getString("data");
+
 
         List<ModeloDados> listaAgendamento =null;
-        listaAgendamento = consultaTodosAgendamentos();
+        // listaAgendamento = consultaTodosAgendamentos();
+        listaAgendamento = consultaTodosAgendamentos(data);
 
 
         AgendaAdapter adaptador = new AgendaAdapter(this, listaAgendamento);
@@ -31,12 +39,13 @@ public class Consulta_Lista extends AppCompatActivity {
     }
 
 
-    private List<ModeloDados> consultaTodosAgendamentos() {
+    //private List<ModeloDados> consultaTodosAgendamentos() {
+    private List<ModeloDados> consultaTodosAgendamentos(String data) {
         List<ModeloDados> lista = new LinkedList<ModeloDados>();
 
 
         BancoControllerAgendamento bd = new BancoControllerAgendamento(getBaseContext());
-        Cursor dados = bd.ConsultarAgendamentos();
+        Cursor dados = bd.ConsultarAgendamentos(data);
 
 
         if (dados != null){
