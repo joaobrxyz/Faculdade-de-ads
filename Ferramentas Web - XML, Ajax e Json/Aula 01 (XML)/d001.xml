@@ -1,0 +1,20 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<purchaseOrder orderDate="2025-08-01">
+    <shipAddress countryCode = "US">
+        <Name>Neymar</Name>
+        <Street>Rua um</Street>
+        <City>Santos</City>
+        <State>SP</State>
+        <zip>04964301</zip>
+    </shipAddress>
+    <item partNo = "987" quantity = "1">
+        <Name>SmartWatch</Name>
+        <Price>5000</Price>
+        <ShipDate>2025-08-04</ShipDate>
+    </item>
+    <item partNo = "123" quantity = "1">
+        <Name>Tesla Cybertruck</Name>
+        <Price>2.000.000</Price>
+        <ShipDate>2025-07-03</ShipDate>
+    </item>
+</purchaseOrder>

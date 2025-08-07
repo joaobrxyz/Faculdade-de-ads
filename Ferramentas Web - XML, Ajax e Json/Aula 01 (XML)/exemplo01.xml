@@ -1,0 +1,29 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<Formando ano = "2024">
+    <Curso> 
+        <SI>
+            <Aluno mat = "0002" dataEntrada = "07-08-2022">
+                <nome>João Vitor</nome>
+                <rg>28.679.378-77</rg>
+                <cpf>123.456.789-00</cpf>
+            </Aluno>
+            <Aluno mat = "0006" dataEntrada = "10-08-2022">
+                <nome>Juliana Dantas</nome>
+                <rg>16.649.528-27</rg>
+                <cpf>987.654.321-10</cpf>
+            </Aluno>
+        </SI>
+        <ADM>
+            <Aluno mat = "0010" dataEntrada = "07-08-2023">
+                <nome>Fernando Silva</nome>
+                <rg>39.429.318-54</rg>
+                <cpf>823.446.789-00</cpf>
+            </Aluno>
+            <Aluno mat = "0019" dataEntrada = "23-08-2023">
+                <nome>Ingrid Dantas</nome>
+                <rg>32.469.218-16</rg>
+                <cpf>047.384.324-26</cpf>
+            </Aluno>
+        </ADM>
+    </Curso>
+</Formando>
