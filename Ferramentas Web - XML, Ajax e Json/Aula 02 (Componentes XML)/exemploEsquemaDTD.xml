@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone = "yes"?>
+<!-- salvar este exemplo com extensão.xml -->
+<!-- definir uma estrutura DTD-->
+<!DOCTYPE pessoas [
+<!ELEMENT contato (nome, rua, telefone, e-mail) >
+<!ELEMENT nome (#PCDATA) >
+<!ELEMENT rua (#PCDATA) >
+<!ELEMENT telefone (#PCDATA) >
+<!ELEMENT e-mail (#PCDATA)>
+]>
+<pessoas>
+    <contato>
+        <nome>Alexandre Perreira </nome>
+        <rua>Rua afonso Braz No 208</rua>
+        <telefone>2367-8900</telefone>
+        <e-mail>ale.perr@gmail.com</e-mail>
+    </contato>
+    <contato>
+        <nome>Hedila Nogueira </nome>
+        <rua>Rua força publica No 338</rua>
+        <telefone>2388-5600</telefone>
+        <e-mail>hnogueira@gmail.com</e-mail>
+    </contato>
+</pessoas>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<!-- Modelo XSD -->
+ <xs:element name="Funcionario">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="nome" type="xs:string" /> 
+            <!-- elemento tem dois atribuitos -->
+            <xs:element name="empresa" type="xs:string" />
+            <xs:element name="telefone" type="xs:int" />
+        </xs:sequence>
+    </xs:complexType>
+ </xs:element>
+ <!-- Conteúdo que segue o modelo XSD -->
+<Funcionario>
+   <nome>Thiago Nascimento</nome>
+   <empresa>Sagah Soluções Educacionais</empresa>
+   <telefone>1234567899</telefone>
+</Funcionario>
+    
+</xs:schema>
