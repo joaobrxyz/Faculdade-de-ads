@@ -1,0 +1,11 @@
+link para testar a transformação de xml para estilo texto amigável usando xslt
+
+https://xslttest.appspot.com/
+
+https://punchoutcommerce.com/tools/xslt-tester
+
+link de explicação
+https://easycodeforall.com/TestXSLT.jsp
+
+link para rodar o arquivo html
+https://www.w3schools.com/html/tryit.asp?filename=tryhtml_editor
