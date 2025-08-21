@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo01 - JSON</title>
+</head>
+<body>
+    <!-- Iniciamos a programação usando Javascript -->
+    <script type="text/Javascript">
+        var dados_json = '{"nome": "Cao Ji Kan", "profissao": "Professor", "depato": "TI"}';
+        console.log(dados_json);
+        // Transformar o formato json em objeto (json)
+        var obj = JSON.parse(dados_json);
+        console.log(obj);
+        obj.nome = "Neymar Júnior";
+    </script>
+</body>
+</html>
