@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testar o comando JSON.stringify()</title>
+</head>
+<body>
+    <script type="text/javascript">
+        // Objeto json
+        var aluno = {
+            'nome': "Júlia Alves",
+            'curso': "Sistemas de informação",
+            'idade': 25,
+            'matriculado': true
+        }
+        console.log(aluno);
+        aluno.nome = "Julianna Alves";
+        aluno.ra = 20112024;
+        // Transformar objeto JSON em texto
+        var txtJson = JSON.stringify(aluno);
+        console.log(txtJson);
+    </script>
+</body>
+</html>
