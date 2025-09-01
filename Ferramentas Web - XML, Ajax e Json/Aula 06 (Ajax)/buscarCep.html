@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar CEP</title>
+</head>
+<body>
+    <!-- Formulário para mostrar cep buscado -->
+    <form name="form1">
+        CEP: <br>
+        <input type="text" name="cep" id="cep"> <br>
+        <!-- Um botão para realizar a operação de busca: buscarCep() -->
+        <input type="button" value="Buscar" onclick="buscarCep()">
+        <!-- Um botão para limpar -->
+        <input type="reset" value="Limpar"> <br><br>
+        Rua: <br>
+        <input type="text" name="rua" id="rua"><br>
+        Bairro: <br>
+        <input type="text" name="bairro" id="bairro"> <br>
+        Cidade: <br>
+        <input type="text" name="cidade" id="cidade"><br>
+        Estado: <br>
+        <input type="text" name="estado" id="estado">
+    </form>
+
+    <script type="text/javascript">
+        var cep = document.getElementById("cep").value;
+        var url = "https://viacep.com.br/ws/" + cep + "/json/";
+        // Objeto para criar uma comunicação do Ajax
+        var obj = new XMLHttpRequest();
+        // true -> operação assíncrona
+        obj.open('GET', url, true);
+        obj.onreadystatechange = function () {
+
+        }
+
+        var rua = document.getElementById("rua");
+        var bairro = document.getElementById("bairro");
+        var cidade = document.getElementById("cidade");
+        var estado = document.getElementById("estado");
+
+        function buscarCep() {
+            
+        }
+    </script>
+</body>
+</html>
