@@ -1,0 +1,60 @@
+{
+    "dados": 
+    {
+        "pessoa": 
+        {
+            "nome": "João da Silva",
+            "idade": 30,
+            "email": "joao.silva@example.com",
+            "telefone": "(11) 1234-5678"
+        },
+        "produto":
+        {
+            "nome": "Notebook Dell Inspiron",
+            "preco": "R$ 3.999,00",
+            "descricao": "Notebook com processador Intel Core i5, 8GB de RAM e SSD de 256GB."
+        },
+        "livro":
+        {
+            "titulo": "O Senhor dos Anéis",
+            "anoPublicacao": 1954,
+            "isbn": "978-8576571248"
+        },
+        "localizacao":
+        {
+            "latitude": -23.5505,
+            "longitude": -46.6333,
+            "cidade": "São Paulo",
+            "pais": "Brasil"
+        },
+        "pedidoCompra":
+        {
+            "numeroPedido": 12345,
+            "data": "2023-08-02",
+            "itens": 
+            [
+                {
+                    "produto": "Camiseta Branca",
+                    "quantidade": 2,
+                    "precoUnidade": 39.90
+                },
+                {
+                    "produto": "Calça Jeans",
+                    "quantidade": 1,
+                    "precoUnidade": 89.90
+                }
+            ]
+        },
+        "configuracoesUser":
+        {
+            "tema": "Escuro",
+            "fontSize": "14px",
+            "notificacoes": "Ativadas"
+        },
+        "equipeDesenvolvimento":
+        {
+            "nome": "CodeCrafters",
+            "membros": ["Alice", "Bob", "Caro"]
+        }
+    }
+}
