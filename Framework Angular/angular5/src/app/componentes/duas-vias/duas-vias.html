@@ -1,0 +1,35 @@
+<h1>{{titulo}}</h1>
+
+Digite a cor em Inglês: 
+<input type="text" [(ngModel)]="cor">
+
+<br> <br>
+
+<div [style.background-color]="cor">
+    O Angular é um framework de código aberto usado para construir aplivativos para web baseado em uma única página dinâmica (SPA).
+</div>
+
+<br><br>
+<h2>Calculadora de média</h2>
+<div>
+    Nota do portfólio: 
+    <input type="number" [(ngModel)]="notaPort">
+</div>
+<br>
+<div>
+    Nota do exercício: 
+    <input type="number" [(ngModel)]="notaExec">
+</div>
+<br>
+<div>
+    Nota da prova: 
+    <input type="number" [(ngModel)]="notaProva">
+</div>
+<br>
+<div>
+    Média: 
+    <input type="number" [(ngModel)]="media" >
+</div>
+<br>
+
+<input type="button" value="Calcular média" (click)="calcularMedia()">
