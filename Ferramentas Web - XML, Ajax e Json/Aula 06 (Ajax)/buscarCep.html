@@ -26,23 +26,31 @@
     </form>
 
     <script type="text/javascript">
-        var cep = document.getElementById("cep").value;
-        var url = "https://viacep.com.br/ws/" + cep + "/json/";
-        // Objeto para criar uma comunicação do Ajax
-        var obj = new XMLHttpRequest();
-        // true -> operação assíncrona
-        obj.open('GET', url, true);
-        obj.onreadystatechange = function () {
-
-        }
-
-        var rua = document.getElementById("rua");
-        var bairro = document.getElementById("bairro");
-        var cidade = document.getElementById("cidade");
-        var estado = document.getElementById("estado");
-
         function buscarCep() {
-            
+            var cep = document.getElementById("cep").value;
+            var url = "https://viacep.com.br/ws/" + cep + "/json/";
+            // Objeto para criar uma comunicação do Ajax
+            var obj = new XMLHttpRequest();
+            // true -> operação assíncrona
+            obj.open('GET', url, true);
+            obj.onreadystatechange = function () {
+                // 4 - Retorno de informação concluído
+                // 200 - Solicitação concluída
+                if (obj.readyState == 4 && obj.status == 200) {
+                    console.log(obj);
+                    // Informação em formato texto 
+                    console.log(obj.responseText);
+                    // Transformar formato texto em objeto JSON
+                    var dados = JSON.parse(obj.responseText);
+                    // Colocar os dados no formulário
+                    document.getElementById("rua").value = dados.logradouro;
+                    document.getElementById("bairro").value = dados.bairro;
+                    document.getElementById("cidade").value = dados.localidade;
+                    document.getElementById("estado").value = dados.uf;
+                }
+            }
+            // Enviar a solicitação
+            obj.send();
         }
     </script>
 </body>

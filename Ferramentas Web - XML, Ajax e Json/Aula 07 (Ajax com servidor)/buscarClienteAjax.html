@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">    
+    <title>Testar Ajax</title>
+    <h2>Buscar clientes no servidor:</h2>       
+    <!-- Botão para buscar os dados de clientes no servidor -->
+    <button type="button" onclick="buscaClientes()">Buscar Clientes</button>
+    <br><br>
+    <!-- Div para apresentar o resultado -->
+    <div id="clientes"></div>
+</head>
+<body>    
+    <!-- Iniciamos a progaramação Ajax -->
+    <script type="text/javascript">        
+        //Criamos uma variável para objeto
+        var obj = null;        
+        // Função para buscar os clientes
+        function buscaClientes() {        
+        // Instanciando o objeto XMLHttpRequest para solicitação
+            if (window.XMLHttpRequest) {//navagadores atuais
+                obj = new XMLHttpRequest();
+            }
+            else {
+            // IE5, IE5.5 ou IE6: Navagadores antigos
+                obj = new ActiveXObject("Microsoft.XMLHTTP");
+            }        
+            // Informando a função para tratamento do retorno
+            obj.onreadystatechange = respostaClientes;
+            // Enviando a requisição usando método "GET"
+            obj.open("GET","http://localhost/aulaAjax/clientes.php",true);
+            obj.send();
+         }
+         // Função que trata a resposta do servidor para a busca de clientes
+        function respostaClientes(){
+            if (obj.readyState == 4 && obj.status == 200){
+        //Recebendo dos dados em JSON e transformando para objetos em JavaScript através da função parse
+                console.log(obj.responseText); //somente para testar
+                var array = JSON.parse(obj.responseText);
+                // Montando o resultado
+                var resultado = "";
+                for (x in array){
+                    resultado = resultado + "Nome: " + array[x].nome +
+                    " Sobrenome: " + array[x].sobrenome + "<br/>";
+                }
+            // Apresentando o resultado por meio do DOM
+            document.getElementById("clientes").innerHTML = resultado;
+            }
+        }
+    </script>    
+</body>
+</html>
