@@ -1,4 +1,5 @@
 <?php
+    include_once 'AlunosService.php';
     // O comando echo mostra na tela
     echo (@$_GET['url']);
     
@@ -32,7 +33,7 @@
                 
             } catch (Exception $erro) {
                 http_response_code(500);
-                echo "ERRO NA API";
+                echo "<br>ERRO NA API - " . $erro->getMessage();
             }
 
         } else {
