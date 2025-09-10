@@ -1,0 +1,25 @@
+<h1>{{titulo}}</h1>
+
+<ul>
+    <li *ngFor="let valor of lista">{{valor}}</li>
+</ul>
+
+<table border="1">
+    <tr *ngFor="let valor2 of lista">
+        <td>{{valor2}}</td>
+    </tr>
+</table>
+
+<ul>
+    @for (item of lista; track $index) {
+        <li>{{item}}</li>
+    }
+</ul>
+
+<table border="1">
+    @for (item2 of lista; track $index) {
+        <tr>
+            <td>{{item2}}</td>
+        </tr>
+    }
+</table>

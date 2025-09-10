@@ -1,0 +1,39 @@
+<h1>{{titulo}}</h1>
+
+<div *ngIf="exibe">
+    Texto da div <br>
+    Texto da div <br>
+    Texto da div <br>
+    Texto da div <br> <br>
+</div>
+
+@if(exibe) {
+    <div>
+        Para a versão Nova do Angular <br>
+        Para a versão Nova do Angular <br>
+        Para a versão Nova do Angular <br>
+    </div>
+} @else {
+    <div>
+        Else da versão Nova do Angular <br>
+        Else da versão Nova do Angular <br>
+        Else da versão Nova do Angular <br> <br>
+    </div>
+}
+
+<div *ngIf="mostrarConteudo; then conteudo1; else conteudo2"></div>
+
+<ng-template #conteudo1>
+    Conteúdo 1 <br>
+    Conteúdo 1 <br>
+</ng-template>
+
+<ng-template #conteudo2>
+    Conteúdo 2 <br>
+    Conteúdo 2 <br> <br>
+</ng-template>
+
+<div (mouseover)="trocarTexto = true" (mouseout)="trocarTexto=false">
+    <span *ngIf="!trocarTexto">Mostrar</span>
+    <span *ngIf="trocarTexto">Esconder</span>
+</div>
