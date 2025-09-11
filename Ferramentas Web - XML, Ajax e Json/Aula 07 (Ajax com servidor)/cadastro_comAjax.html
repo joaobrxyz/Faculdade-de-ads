@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo AJAX</title>
+    <script type="text/javascript">
+        function enviarCadastro(){
+            var vnome  = document.getElementById("txtnome").value ;
+            var vidade = document.getElementById("txtidade").value ;
+            var vemail = document.getElementById("txtemail").value ;
+
+            var url = "gravar.php?txtnome="+vnome+"&txtidade="+vidade+"&txtemail="+vemail ;
+
+            var obj = new XMLHttpRequest() ;
+            obj.open( 'POST' , url , true ) ;
+
+            obj.onreadystatechange = function () {
+                if ( obj.readyState == 4 && obj.status == 200 ) {
+                    console.log(obj);
+                    document.getElementById("mensagem").innerHTML = obj.responseText ;
+                    document.getElementById("txtnome").value = "" ;
+                    document.getElementById("txtidade").value = "" ;
+                    document.getElementById("txtemail").value = "" ;
+                }
+            }
+            obj.send() ;
+        }
+    </script>
+</head>
+<body>
+    <h2>Exemplo Ajax com BD</h2>
+    <fieldset>
+        <legend>CADASTRO de ALUNOS</legend>
+        <form name="form1" method="POST" action="gravar.php">
+            Nome:   <input type="text" name="txtnome" id="txtnome" /> <br>
+            Idade :  <input type="text" name="txtidade" id="txtidade" /> <br>
+            e-mail: <input type="text" name="txtemail" id="txtemail" /> <br> <br>
+            <input type="button" value="Gravar" onclick="enviarCadastro()" />
+            <div id="mensagem"></div>
+        </form>
+    </fieldset>
+</body>
+</html>
