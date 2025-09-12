@@ -1,0 +1,22 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+mat-toolbar {
+    background-color: #0a837f;
+    color: white;
+}
+mat-toolbar a {
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+}
+.main-container {
+    padding: 20px;
+}
+.ativo {
+    color: #ffbc11 !important;
+}
+.toolbar-links {
+    margin-right: 50px;
+    margin-left: 15px;
+}
