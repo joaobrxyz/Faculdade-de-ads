@@ -1,14 +1,15 @@
 <?php
     include_once 'AlunosService.php';
+    include_once 'util.php';
     // O comando echo mostra na tela
-    echo (@$_GET['url']);
+    // echo (@$_GET['url']);
     
-    echo("<br>");
+    // echo("<br>");
     if(@$_GET['url']) {
         $url = explode('/', $_GET['url']);
 
         // O comando var_dump mostra na tela o vetor $url
-        var_dump($url);
+        // var_dump($url);
 
         if($url[0] === 'api') {
             // Remove a primeira posição do vetor
@@ -19,9 +20,9 @@
 
             $method = $_SERVER["REQUEST_METHOD"];
 
-            echo "Serviço: " . $service;
-            echo ("<br>");
-            echo "Método: " . $method;
+            // echo "Serviço: " . $service;
+            // echo ("<br>");
+            // echo "Método: " . $method;
 
             array_shift($url);
 
@@ -29,11 +30,13 @@
                 // Chamar a classe(arquivo) responsável pelo serviço
                 $response = call_user_func_array(array(new $service, $method), $url);
                 http_response_code(200);
-                echo $response;
+                // echo $response;
+                echo FormatarMensagemJson($response["erro"], $response["mensagem"], $response["dados"]);
                 
             } catch (Exception $erro) {
                 http_response_code(500);
                 echo "<br>ERRO NA API - " . $erro->getMessage();
+                echo FormatarMensagemJson(true, $erro->getMessage, []);
             }
 
         } else {

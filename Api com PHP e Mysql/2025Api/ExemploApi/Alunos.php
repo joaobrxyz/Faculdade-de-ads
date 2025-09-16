@@ -22,10 +22,10 @@ class Alunos {
 
         if ($row) {
             // Se encontrar o aluno
-            var_dump($row);
+            return ["erro" => false, "mensagem" => "Dados encontrados", "dados" => $row];
         } else {
             // Não encontrou o código
-            throw new Exception("Código não encontrado");
+            return ["erro" => true, "mensagem" => "Código não encontrado", "dados" => []];
         }
     }
 
@@ -43,10 +43,13 @@ class Alunos {
 
         // Encontrou dados
         if($stm->rowCount() > 0) {
-            var_dump($stm->fetch(PDO::FETCH_ASSOC));
+            // var_dump($stm->fetchAll(PDO::FETCH_ASSOC));
+            $dados = $stm->fetchAll(PDO::FETCH_ASSOC);
+            return ["erro" => false, "mensagem" => "Dados encontrados", "dados" => $dados];
         } else {
             // Não encontrou dados na tabela
-            throw new Exception("Tabela vazia");
+            // throw new Exception("Tabela vazia");
+            return ["erro" => true, "mensagem" => "Tabela vazia", "dados" => []];
         }
     }
 
@@ -68,10 +71,10 @@ class Alunos {
 
         // Cadastrou os dados
         if($stm->rowCount() > 0) {
-            echo "Dados cadastrados com sucesso";
+            return ["erro" => false, "mensagem" => "Dados adiciionados com sucesso!", "dados" => []];
         } else {
             // Não gravou por algum motivo
-            echo "Erro";
+            return ["erro" => true, "mensagem" => "Erro ao alterar", "dados" => []];
         }
     }
 
@@ -94,12 +97,38 @@ class Alunos {
 
         // Alterou os dados
         if($stm->rowCount() > 0) {
-            echo "Dados alterados com sucesso";
+            return ["erro" => false, "mensagem" => "Dados alterados com sucesso!", "dados" => []];
         } else {
             // Não alteru por algum motivo
-            echo "Erro";
+            return ["erro" => true, "mensagem" => "Erro ao alterar", "dados" => []];
         }
     }
+
+    public static function deletar($id) {
+        $tabela = "alunos";
+
+        $conexao = new PDO(dbDrive . ':host=' . dbEndereco . '; dbname=' . dbNome, dbUsuario, dbSenha);
+
+        $sql = "DELETE FROM $tabela WHERE codigo = :id";
+
+        // Preparar o comando Select
+        $stm = $conexao->prepare($sql);
+
+        $stm->bindValue(':id', $id);
+
+        $stm->execute();
+
+        // Deletou os dados
+        if($stm->rowCount() > 0) {
+            // echo "Dados excluídos com sucesso";
+            return ["erro" => false, "mensagem" => "Dados excluídos com sucesso", "dados" => []];
+        } else {
+            // Não deletou por algum motivo
+            // echo "Erro";
+            return ["erro" => false, "mensagem" => "Código não encontrado", "dados" => []];
+        }
+    }
+
 }
 
 ?>

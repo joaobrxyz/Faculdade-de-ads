@@ -32,5 +32,13 @@ class AlunosService {
         }
         return Alunos::alterar($id, $dados);
     }
+
+    public function delete($id = null) {
+        if ($id == null) {
+            throw new Exception("Falta o código do aluno.");
+        }
+        
+        return Alunos::deletar($id);
+    }
 }
 ?>
