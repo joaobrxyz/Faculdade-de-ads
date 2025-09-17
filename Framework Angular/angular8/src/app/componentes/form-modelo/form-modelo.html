@@ -1,0 +1,21 @@
+<h2>{{titulo}}</h2>
+
+<form #form="ngForm" (ngSubmit)="enviar(form)">
+    <label for="nome">Nome:</label>
+    <input type="text" name="nome" id="nome" ngModel required>   
+    <span *ngIf="form.controls['nome']?.invalid && form.controls['nome']?.touched">Nome é obrigatório</span>
+    <br>
+
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email" ngModel required>   
+    <span *ngIf="form.controls['email']?.invalid && form.controls['email']?.touched">Email é obrigatório</span>
+    <br>
+
+    <label for="idade">Nome:</label>
+    <input type="number" name="idade" id="idade" ngModel required>   
+    <span *ngIf="form.controls['idade']?.invalid && form.controls['idade']?.touched">Idade é obrigatório</span>
+    <br>
+
+    <button type="submit">Enviar</button>
+
+</form>
