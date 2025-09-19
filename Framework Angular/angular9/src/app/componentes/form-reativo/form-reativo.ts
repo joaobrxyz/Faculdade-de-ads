@@ -18,4 +18,12 @@ export class FormReativo {
       idade: ['', [Validators.required, Validators.min(0)]]
      });
   }
+
+  enviar() {
+    if(this.form.valid) {
+      alert(this.form.get('nome')?.value);
+    } else {
+      alert("Formulário Inválido.");
+    }
+  }
 }

@@ -1,6 +1,6 @@
 <h3>Formulário Reativo</h3>
 
-<form [formGroup]="form">
+<form [formGroup]="form" (ngSubmit)="enviar()">
     <label for="nome">Nome: </label>
     <input type="text" name="nome" id="nome" formControlName="nome">
     <span *ngIf="form.get('nome')?.invalid && form.get('nome')?.touched">
