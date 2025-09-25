@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">    
+    <title>Exemplo JQuery com Ajax</title>
+    <!--Incluindo a biblioteca -->
+    <script src = "js/jquery-3.7.1.js"></script>
+    <script type = "text/javascript">
+        $(document).ready( function() {
+            $("#buscar").click( function() {
+                var cep = $("#txtcep").val();
+                var url = "https://viacep.com.br/ws/"+cep+"/json/";
+                $.ajax({url:url, type:'GET', dataType:'json'}).done(function(resposta){
+                    $('#rua').val(resposta.logradouro);
+                    $('#bairro').val(resposta.bairro);
+                    $('#cidade').val(resposta.localidade);
+                    $('#uf').val(resposta.uf);                
+                });                
+            });
+            $("#limpar").click( function(){
+                $('#txtcep').val("");                    
+                $('#rua').val("");
+                $('#bairro').val("");
+                $('#cidade').val("");
+                $('#uf').val(""); 
+            });
+        });
+    </script>
+</head>
+<body>
+    <!--Criamos um formulario -->
+    <h3>Buscando CEP usando JQuery </h3>      
+    CEP: <br>
+    <input type="text" id="txtcep"><br> 
+    <!-- Criamos dois botões -->
+    <button id="buscar">Buscar</button>
+    <button id="limpar">Limpar</button><br/>           
+    <p>Endereço buscado através do CEP</p>
+    Av./Rua: <br>
+    <input type="text" id="rua"> <br>
+    Bairro: <br>
+    <input type="text" id="bairro"> <br>
+    Cidade: <br>
+    <input type="text" id="cidade"> <br>
+    UF: <br>
+    <input type="text" id="uf"> <br>    
+</body>
+</html>
