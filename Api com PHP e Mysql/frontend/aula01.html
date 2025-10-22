@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>Lista de Alunos</h1>
+    <div id="conteiner">
+        <table>
+            <thead>
+                <tr>
+                    <td>Código</td>
+                    <td>Nome</td>
+                    <td>Email</td>
+                    <td>Telefone</td>
+                </tr>
+            </thead>
+            <tbody id="tabelaDados">
+                <!-- Aqui vai ser inserido os dados (api) -->
+                
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        // Garante que a função será executada após a página ser carregada
+        $(document).ready( function () {
+            carregaDadosApi();
+        });
+        function carregaDadosApi() {
+            $.ajax({
+                url: 'http://localhost/2025API/ExemploApi/api/Alunos', // Endpoint da Api
+                method: 'GET',
+                dataType: 'json',
+                success: function (respostaAPI) { 
+                    const tabela = $('#tabelaDados');
+                    if (respostaAPI.erro) {
+                        tabela.append('<tr> <td colspan="4" style="color:red">Erro ao carregar os dados</td> </tr>');
+                    } else if (respostaAPI.dados.length === 0) {
+                        tabela.append('<tr> <td colspan="4" style="color:red">Tabela vazia</td> </tr>');
+                    } else {
+                        respostaAPI.dados.forEach(function (item) {
+                            tabela.append(
+                                `<tr>
+                                    <td>${item.codigo}</td>
+                                    <td>${item.nome}</td>
+                                    <td>${item.email}</td>
+                                    <td>${item.telefone}</td>
+                                </tr>`
+                            );
+                        });
+                    }
+                },
+                error: function () {
+                    $('#tabelaDados').html('<tr> <td colspan="4" style="color:red">Erro ao carregar os dados</td> </tr>');
+                }
+            });
+        }
+    </script>
+</body>
+</html>

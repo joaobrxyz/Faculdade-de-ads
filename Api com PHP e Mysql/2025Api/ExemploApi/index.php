@@ -1,6 +1,14 @@
 <?php
     include_once 'AlunosService.php';
     include_once 'util.php';
+
+    header("Access-Control-Allow-Origin: *"); // Necessário Localhost
+    header( "Content-Type: application/json; charset=UTF-8 " ) ;
+    header( "Access-Control-Allow-Methods: GET,POST,PUT,DELETE" ) ;
+    header( "Access-Control: no-cache, no-store, must-revalidate" ) ;
+    header( "Access-Control-Allow-Headers: *" ) ;
+    header( "Access-Control-Max-Age: 86400" ) ;
+
     // O comando echo mostra na tela
     // echo (@$_GET['url']);
     
