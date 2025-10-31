@@ -35,3 +35,6 @@ local.properties
 # Arquivos de log e temporários
 *.log
 *.tmp
+Linguagem C/Aula 14 (Lista dinâmica)/.vscode/settings.json
+Linguagem C/Aula 14 (Lista dinâmica)/.vscode/c_cpp_properties.json
+Linguagem C/Aula 14 (Lista dinâmica)/.vscode/launch.json
