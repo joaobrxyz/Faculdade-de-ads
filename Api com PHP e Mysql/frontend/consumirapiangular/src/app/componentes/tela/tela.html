@@ -1,0 +1,26 @@
+<div class="conteiner">
+    <div *ngIf="mensagem" [style.color]="erro ? 'red' : 'green'">
+        {{mensagem}}
+    </div>
+    <div>
+        <table border="1">
+            <tr>
+                <thead>
+                    <td>Código</td>
+                    <td>Nome</td>
+                    <td>Email</td>
+                    <td>Telefone</td>
+                </thead>
+                <tbody>
+                    <!-- Aqui vai entrar os dados -->
+                    <tr *ngFor="let item of listaAlunos">
+                        <td> {{ item.codigo }} </td>
+                        <td> {{ item.nome }} </td>
+                        <td> {{ item.email }} </td>
+                        <td> {{ item.telefone }} </td>
+                    </tr>
+                </tbody>
+            </tr>
+        </table>
+    </div>
+</div>
