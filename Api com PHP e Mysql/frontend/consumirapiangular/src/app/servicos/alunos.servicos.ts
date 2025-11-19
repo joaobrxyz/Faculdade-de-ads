@@ -23,4 +23,19 @@ export class AlunosServicos {
   listarTodos() : Observable<ApiRetorno> {
     return this.http.get<ApiRetorno>(this.API_URL);
   }
+
+  // Método para chamar a API para Incluir aluno
+  criar(aluno:Aluno) : Observable<ApiRetorno> {
+    return this.http.post<ApiRetorno>(this.API_URL, aluno);
+  }
+
+   // Método para chamar a API para Alterar aluno
+  atualizar(codigo:number, aluno:Aluno) : Observable<ApiRetorno> {
+    return this.http.put<ApiRetorno>(`${this.API_URL}/${codigo}`, aluno);
+  }
+
+  // Método para chamar a API para Deletar aluno
+  excluir(codigo:number) : Observable<ApiRetorno> {
+    return this.http.delete<ApiRetorno>(`${this.API_URL}/${codigo}`);
+  }
 }

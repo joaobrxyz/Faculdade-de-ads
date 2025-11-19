@@ -1,9 +1,29 @@
-<div class="conteiner">
+<div class="container">
     <div *ngIf="mensagem" [style.color]="erro ? 'red' : 'green'">
         {{mensagem}}
     </div>
+
     <div>
-        <table border="1">
+        <form [formGroup]="form">
+            <label for="codigo">Código:</label>
+            <input type="text" name="codigo" id="codigo" formControlName="codigo" readonly> <br>
+
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" formControlName="nome"> <br>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" formControlName="email"> <br>
+
+            <label for="telefone">Telefone:</label>
+            <input type="text" name="telefone" id="telefone" formControlName="telefone"> <br>
+
+            <button type="button" (click)="salvar()" class="btn btn-success">Salvar</button>
+            <button type="button" (click)="alterarDados()" class="btn btn-warning">Alterar</button>
+            <button type="button" (click)="excluirDados()" class="btn btn-danger">Excluir</button>
+
+        </form>
+    <hr>
+        <table border="1" class="table table-striped">
             <tr>
                 <thead>
                     <td>Código</td>
@@ -13,7 +33,7 @@
                 </thead>
                 <tbody>
                     <!-- Aqui vai entrar os dados -->
-                    <tr *ngFor="let item of listaAlunos">
+                    <tr *ngFor="let item of listaAlunos" (click)="carregarAlunosFormulario(item)">
                         <td> {{ item.codigo }} </td>
                         <td> {{ item.nome }} </td>
                         <td> {{ item.email }} </td>
