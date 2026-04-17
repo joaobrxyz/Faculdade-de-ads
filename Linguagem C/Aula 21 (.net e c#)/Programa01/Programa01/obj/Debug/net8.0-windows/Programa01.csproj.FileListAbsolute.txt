@@ -1,0 +1,17 @@
+C:\Users\usrlab20ng\Documents\GitHub\Faculdade-de-ads\Linguagem C\Aula 21 (.net e c#)\Programa01\Programa01\bin\Debug\net8.0-windows\Programa01.exe
+C:\Users\usrlab20ng\Documents\GitHub\Faculdade-de-ads\Linguagem C\Aula 21 (.net e c#)\Programa01\Programa01\bin\Debug\net8.0-windows\Programa01.deps.json
+C:\Users\usrlab20ng\Documents\GitHub\Faculdade-de-ads\Linguagem C\Aula 21 (.net e c#)\Programa01\Programa01\bin\Debug\net8.0-windows\Programa01.runtimeconfig.json
+C:\Users\usrlab20ng\Documents\GitHub\Faculdade-de-ads\Linguagem C\Aula 21 (.net e c#)\Programa01\Programa01\bin\Debug\net8.0-windows\Programa01.dll
+C:\Users\usrlab20ng\Documents\GitHub\Faculdade-de-ads\Linguagem C\Aula 21 (.net e c#)\Programa01\Programa01\bin\Debug\net8.0-windows\Programa01.pdb
+C:\Users\usrlab20ng\Documents\GitHub\Faculdade-de-ads\Linguagem C\Aula 21 (.net e c#)\Programa01\Programa01\obj\Debug\net8.0-windows\Programa01.Form1.resources
+C:\Users\usrlab20ng\Documents\GitHub\Faculdade-de-ads\Linguagem C\Aula 21 (.net e c#)\Programa01\Programa01\obj\Debug\net8.0-windows\Programa01.csproj.GenerateResource.cache
+C:\Users\usrlab20ng\Documents\GitHub\Faculdade-de-ads\Linguagem C\Aula 21 (.net e c#)\Programa01\Programa01\obj\Debug\net8.0-windows\Programa01.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\usrlab20ng\Documents\GitHub\Faculdade-de-ads\Linguagem C\Aula 21 (.net e c#)\Programa01\Programa01\obj\Debug\net8.0-windows\Programa01.AssemblyInfoInputs.cache
+C:\Users\usrlab20ng\Documents\GitHub\Faculdade-de-ads\Linguagem C\Aula 21 (.net e c#)\Programa01\Programa01\obj\Debug\net8.0-windows\Programa01.AssemblyInfo.cs
+C:\Users\usrlab20ng\Documents\GitHub\Faculdade-de-ads\Linguagem C\Aula 21 (.net e c#)\Programa01\Programa01\obj\Debug\net8.0-windows\Programa01.csproj.CoreCompileInputs.cache
+C:\Users\usrlab20ng\Documents\GitHub\Faculdade-de-ads\Linguagem C\Aula 21 (.net e c#)\Programa01\Programa01\obj\Debug\net8.0-windows\Programa01.sourcelink.json
+C:\Users\usrlab20ng\Documents\GitHub\Faculdade-de-ads\Linguagem C\Aula 21 (.net e c#)\Programa01\Programa01\obj\Debug\net8.0-windows\Programa01.dll
+C:\Users\usrlab20ng\Documents\GitHub\Faculdade-de-ads\Linguagem C\Aula 21 (.net e c#)\Programa01\Programa01\obj\Debug\net8.0-windows\refint\Programa01.dll
+C:\Users\usrlab20ng\Documents\GitHub\Faculdade-de-ads\Linguagem C\Aula 21 (.net e c#)\Programa01\Programa01\obj\Debug\net8.0-windows\Programa01.pdb
+C:\Users\usrlab20ng\Documents\GitHub\Faculdade-de-ads\Linguagem C\Aula 21 (.net e c#)\Programa01\Programa01\obj\Debug\net8.0-windows\Programa01.genruntimeconfig.cache
+C:\Users\usrlab20ng\Documents\GitHub\Faculdade-de-ads\Linguagem C\Aula 21 (.net e c#)\Programa01\Programa01\obj\Debug\net8.0-windows\ref\Programa01.dll
