@@ -3,24 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\usrlab20ng\\Documents\\GitHub\\Faculdade-de-ads\\Linguagem C\\Aula 21 (.net e c#)\\Programa02\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{98EEC652-B9D1-4C8C-8CFB-E947B4F617C7}|Programa02\\Programa02.csproj|c:\\users\\usrlab20ng\\documents\\github\\faculdade-de-ads\\linguagem c\\aula 21 (.net e c#)\\programa02\\programa02\\calculadora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{98EEC652-B9D1-4C8C-8CFB-E947B4F617C7}|Programa02\\Programa02.csproj|solutionrelative:programa02\\calculadora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{98EEC652-B9D1-4C8C-8CFB-E947B4F617C7}|Programa02\\Programa02.csproj|c:\\users\\usrlab20ng\\documents\\github\\faculdade-de-ads\\linguagem c\\aula 21 (.net e c#)\\programa02\\programa02\\cadastroproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{98EEC652-B9D1-4C8C-8CFB-E947B4F617C7}|Programa02\\Programa02.csproj|solutionrelative:programa02\\cadastroproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{98EEC652-B9D1-4C8C-8CFB-E947B4F617C7}|Programa02\\Programa02.csproj|c:\\users\\usrlab20ng\\documents\\github\\faculdade-de-ads\\linguagem c\\aula 21 (.net e c#)\\programa02\\programa02\\calculadora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{98EEC652-B9D1-4C8C-8CFB-E947B4F617C7}|Programa02\\Programa02.csproj|solutionrelative:programa02\\calculadora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{98EEC652-B9D1-4C8C-8CFB-E947B4F617C7}|Programa02\\Programa02.csproj|c:\\users\\usrlab20ng\\documents\\github\\faculdade-de-ads\\linguagem c\\aula 21 (.net e c#)\\programa02\\programa02\\cadastroproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98EEC652-B9D1-4C8C-8CFB-E947B4F617C7}|Programa02\\Programa02.csproj|solutionrelative:programa02\\cadastroproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{98EEC652-B9D1-4C8C-8CFB-E947B4F617C7}|Programa02\\Programa02.csproj|c:\\users\\usrlab20ng\\documents\\github\\faculdade-de-ads\\linguagem c\\aula 21 (.net e c#)\\programa02\\programa02\\menuprincipal.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{98EEC652-B9D1-4C8C-8CFB-E947B4F617C7}|Programa02\\Programa02.csproj|C:\\Users\\usrlab20ng\\Documents\\GitHub\\Faculdade-de-ads\\Linguagem C\\Aula 21 (.net e c#)\\Programa02\\programa02\\menuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{98EEC652-B9D1-4C8C-8CFB-E947B4F617C7}|Programa02\\Programa02.csproj|solutionrelative:programa02\\menuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98EEC652-B9D1-4C8C-8CFB-E947B4F617C7}|Programa02\\Programa02.csproj|C:\\Users\\usrlab20ng\\Documents\\GitHub\\Faculdade-de-ads\\Linguagem C\\Aula 21 (.net e c#)\\Programa02\\programa02\\menuprincipal.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{98EEC652-B9D1-4C8C-8CFB-E947B4F617C7}|Programa02\\Programa02.csproj|solutionrelative:programa02\\menuprincipal.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{98EEC652-B9D1-4C8C-8CFB-E947B4F617C7}|Programa02\\Programa02.csproj|c:\\users\\usrlab20ng\\documents\\github\\faculdade-de-ads\\linguagem c\\aula 21 (.net e c#)\\programa02\\programa02\\menuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{98EEC652-B9D1-4C8C-8CFB-E947B4F617C7}|Programa02\\Programa02.csproj|C:\\Users\\usrlab20ng\\Documents\\GitHub\\Faculdade-de-ads\\Linguagem C\\Aula 21 (.net e c#)\\Programa02\\programa02\\calculadora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{98EEC652-B9D1-4C8C-8CFB-E947B4F617C7}|Programa02\\Programa02.csproj|solutionrelative:programa02\\calculadora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98EEC652-B9D1-4C8C-8CFB-E947B4F617C7}|Programa02\\Programa02.csproj|C:\\Users\\usrlab20ng\\Documents\\GitHub\\Faculdade-de-ads\\Linguagem C\\Aula 21 (.net e c#)\\Programa02\\programa02\\menuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{98EEC652-B9D1-4C8C-8CFB-E947B4F617C7}|Programa02\\Programa02.csproj|solutionrelative:programa02\\menuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{98EEC652-B9D1-4C8C-8CFB-E947B4F617C7}|Programa02\\Programa02.csproj|c:\\users\\usrlab20ng\\documents\\github\\faculdade-de-ads\\linguagem c\\aula 21 (.net e c#)\\programa02\\programa02\\menuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{98EEC652-B9D1-4C8C-8CFB-E947B4F617C7}|Programa02\\Programa02.csproj|solutionrelative:programa02\\menuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{98EEC652-B9D1-4C8C-8CFB-E947B4F617C7}|Programa02\\Programa02.csproj|c:\\users\\usrlab20ng\\documents\\github\\faculdade-de-ads\\linguagem c\\aula 21 (.net e c#)\\programa02\\programa02\\calculadora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98EEC652-B9D1-4C8C-8CFB-E947B4F617C7}|Programa02\\Programa02.csproj|solutionrelative:programa02\\calculadora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,11 +38,40 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "cadastroProduto.cs",
+              "DocumentMoniker": "C:\\Users\\usrlab20ng\\Documents\\GitHub\\Faculdade-de-ads\\Linguagem C\\Aula 21 (.net e c#)\\Programa02\\Programa02\\cadastroProduto.cs",
+              "RelativeDocumentMoniker": "Programa02\\cadastroProduto.cs",
+              "ToolTip": "C:\\Users\\usrlab20ng\\Documents\\GitHub\\Faculdade-de-ads\\Linguagem C\\Aula 21 (.net e c#)\\Programa02\\Programa02\\cadastroProduto.cs",
+              "RelativeToolTip": "Programa02\\cadastroProduto.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAIA7wCQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-08T10:47:02.841Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "cadastroProduto.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\usrlab20ng\\Documents\\GitHub\\Faculdade-de-ads\\Linguagem C\\Aula 21 (.net e c#)\\Programa02\\Programa02\\cadastroProduto.cs",
+              "RelativeDocumentMoniker": "Programa02\\cadastroProduto.cs",
+              "ToolTip": "C:\\Users\\usrlab20ng\\Documents\\GitHub\\Faculdade-de-ads\\Linguagem C\\Aula 21 (.net e c#)\\Programa02\\Programa02\\cadastroProduto.cs [Projeto]",
+              "RelativeToolTip": "Programa02\\cadastroProduto.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-08T10:43:46.706Z",
+              "EditorCaption": " [Projeto]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "calculadora.cs",
               "DocumentMoniker": "C:\\Users\\usrlab20ng\\Documents\\GitHub\\Faculdade-de-ads\\Linguagem C\\Aula 21 (.net e c#)\\Programa02\\Programa02\\calculadora.cs",
               "RelativeDocumentMoniker": "Programa02\\calculadora.cs",
@@ -47,7 +84,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "menuPrincipal.Designer.cs",
               "DocumentMoniker": "C:\\Users\\usrlab20ng\\Documents\\GitHub\\Faculdade-de-ads\\Linguagem C\\Aula 21 (.net e c#)\\Programa02\\Programa02\\menuPrincipal.Designer.cs",
               "RelativeDocumentMoniker": "Programa02\\menuPrincipal.Designer.cs",
@@ -60,7 +97,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "calculadora.cs [Projeto]",
               "DocumentMoniker": "C:\\Users\\usrlab20ng\\Documents\\GitHub\\Faculdade-de-ads\\Linguagem C\\Aula 21 (.net e c#)\\Programa02\\Programa02\\calculadora.cs",
               "RelativeDocumentMoniker": "Programa02\\calculadora.cs",
@@ -72,7 +109,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "menuPrincipal.cs",
               "DocumentMoniker": "C:\\Users\\usrlab20ng\\Documents\\GitHub\\Faculdade-de-ads\\Linguagem C\\Aula 21 (.net e c#)\\Programa02\\Programa02\\menuPrincipal.cs",
               "RelativeDocumentMoniker": "Programa02\\menuPrincipal.cs",
@@ -85,7 +122,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "menuPrincipal.cs [Projeto]",
               "DocumentMoniker": "C:\\Users\\usrlab20ng\\Documents\\GitHub\\Faculdade-de-ads\\Linguagem C\\Aula 21 (.net e c#)\\Programa02\\Programa02\\menuPrincipal.cs",
               "RelativeDocumentMoniker": "Programa02\\menuPrincipal.cs",

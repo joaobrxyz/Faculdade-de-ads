@@ -83,6 +83,16 @@ namespace Programa02.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap imgNovo {
+            get {
+                object obj = ResourceManager.GetObject("imgNovo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap NovoProduto {
             get {
                 object obj = ResourceManager.GetObject("NovoProduto", resourceCulture);
