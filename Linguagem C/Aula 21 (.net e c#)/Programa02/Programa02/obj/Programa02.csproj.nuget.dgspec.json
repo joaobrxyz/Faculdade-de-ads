@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\usrlab20ng\\Documents\\GitHub\\Faculdade-de-ads\\Linguagem C\\Aula 21 (.net e c#)\\Programa02\\Programa02\\Programa02.csproj": {}
+    "C:\\Users\\joaom\\Documents\\Estudos\\Faculdade-de-ads\\Linguagem C\\Aula 21 (.net e c#)\\Programa02\\Programa02\\Programa02.csproj": {}
   },
   "projects": {
-    "C:\\Users\\usrlab20ng\\Documents\\GitHub\\Faculdade-de-ads\\Linguagem C\\Aula 21 (.net e c#)\\Programa02\\Programa02\\Programa02.csproj": {
+    "C:\\Users\\joaom\\Documents\\Estudos\\Faculdade-de-ads\\Linguagem C\\Aula 21 (.net e c#)\\Programa02\\Programa02\\Programa02.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\usrlab20ng\\Documents\\GitHub\\Faculdade-de-ads\\Linguagem C\\Aula 21 (.net e c#)\\Programa02\\Programa02\\Programa02.csproj",
+        "projectUniqueName": "C:\\Users\\joaom\\Documents\\Estudos\\Faculdade-de-ads\\Linguagem C\\Aula 21 (.net e c#)\\Programa02\\Programa02\\Programa02.csproj",
         "projectName": "Programa02",
-        "projectPath": "C:\\Users\\usrlab20ng\\Documents\\GitHub\\Faculdade-de-ads\\Linguagem C\\Aula 21 (.net e c#)\\Programa02\\Programa02\\Programa02.csproj",
-        "packagesPath": "C:\\Users\\usrlab20ng\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\usrlab20ng\\Documents\\GitHub\\Faculdade-de-ads\\Linguagem C\\Aula 21 (.net e c#)\\Programa02\\Programa02\\obj\\",
+        "projectPath": "C:\\Users\\joaom\\Documents\\Estudos\\Faculdade-de-ads\\Linguagem C\\Aula 21 (.net e c#)\\Programa02\\Programa02\\Programa02.csproj",
+        "packagesPath": "C:\\Users\\joaom\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\joaom\\Documents\\Estudos\\Faculdade-de-ads\\Linguagem C\\Aula 21 (.net e c#)\\Programa02\\Programa02\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\usrlab20ng\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\joaom\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,10 +26,12 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net8.0-windows7.0": {
+          "net8.0-windows": {
+            "framework": "net8.0-windows7.0",
             "targetAlias": "net8.0-windows",
             "projectReferences": {}
           }
@@ -39,11 +45,19 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "10.0.300"
       },
       "frameworks": {
-        "net8.0-windows7.0": {
+        "net8.0-windows": {
+          "framework": "net8.0-windows7.0",
           "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[9.7.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -63,7 +77,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

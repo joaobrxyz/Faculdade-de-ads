@@ -9,7 +9,8 @@ namespace Programa02
 
         private void novoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            cadastroProduto telaCad = new cadastroProduto();
+            telaCad.ShowDialog();
         }
 
         private void mnuCadSair_Click(object sender, EventArgs e)
