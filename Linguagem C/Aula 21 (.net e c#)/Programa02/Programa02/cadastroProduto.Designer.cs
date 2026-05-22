@@ -84,7 +84,6 @@
             txtDescricao.ScrollBars = ScrollBars.Vertical;
             txtDescricao.Size = new Size(559, 107);
             txtDescricao.TabIndex = 3;
-            txtDescricao.TextChanged += textBox2_TextChanged;
             // 
             // txtNome
             // 
@@ -103,7 +102,6 @@
             label3.Size = new Size(53, 20);
             label3.TabIndex = 4;
             label3.Text = "Nome:";
-            label3.Click += label3_Click;
             // 
             // label4
             // 
@@ -160,7 +158,6 @@
             numEstoque.Name = "numEstoque";
             numEstoque.Size = new Size(137, 27);
             numEstoque.TabIndex = 11;
-            numEstoque.ValueChanged += numericUpDown1_ValueChanged;
             // 
             // btNovo
             // 
@@ -189,6 +186,7 @@
             btSalvar.Text = "Salvar";
             btSalvar.TextAlign = ContentAlignment.BottomCenter;
             btSalvar.UseVisualStyleBackColor = true;
+            btSalvar.Click += btSalvar_Click;
             // 
             // btExcluir
             // 
@@ -203,6 +201,7 @@
             btExcluir.Text = "Excluír";
             btExcluir.TextAlign = ContentAlignment.BottomCenter;
             btExcluir.UseVisualStyleBackColor = true;
+            btExcluir.Click += btExcluir_Click;
             // 
             // btConsultar
             // 
@@ -227,6 +226,7 @@
             btAlterar.TabIndex = 17;
             btAlterar.Text = "Alterar";
             btAlterar.UseVisualStyleBackColor = true;
+            btAlterar.Click += btAlterar_Click;
             // 
             // cadastroProduto
             // 
@@ -253,7 +253,6 @@
             Margin = new Padding(3, 4, 3, 4);
             Name = "cadastroProduto";
             Text = "cadastroProduto";
-            Load += cadastroProduto_Load;
             ((System.ComponentModel.ISupportInitialize)numEstoque).EndInit();
             ResumeLayout(false);
             PerformLayout();
